@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hw42.HelloController">
+   <top>
+   
+          <Label fx:id="welcomeText" text="RU Cafe" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <VBox prefHeight="447.0" prefWidth="286.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+             <Button contentDisplay="TOP" onAction="#onHelloButtonClick" prefHeight="180.0" prefWidth="255.0" text="Donuts">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@donuts.jpg.jpg" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#coffeeClick" text="Coffee">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@150929101049-black-coffee-stock-super-tease.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="100.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#yourOrderClick" prefHeight="114.0" prefWidth="115.0" text="Your Order">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Shopping-bag.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#storeOrderClick" text="Store Orders">
+               <graphic>
+                  <ImageView fitHeight="121.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@clipboard-icon-checklist-sign-symbol-web-site-app-design-clipboard.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="100.0" top="30.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>

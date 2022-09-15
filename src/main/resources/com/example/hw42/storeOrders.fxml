@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hw42.storeOrdersController">
+   <children>
+      <Label layoutX="166.0" layoutY="30.0" text="Store Orders">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="orderNumber" layoutX="80.0" layoutY="100.0" onAction="#orderNumberSelection" prefWidth="150.0" />
+      <Label layoutX="300.0" layoutY="104.0" text="Total" />
+      <TextField fx:id="total" layoutX="345.0" layoutY="100.0" />
+      <ListView fx:id="orderdisplay" layoutX="64.0" layoutY="145.0" prefHeight="200.0" prefWidth="454.0" />
+      <Button fx:id="closeButton" layoutX="121.0" layoutY="354.0" mnemonicParsing="false" onAction="#orderCancel" text="Cancel Order" />
+      <Button layoutX="375.0" layoutY="354.0" mnemonicParsing="false" onAction="#printtotxt" text="Export Orders" />
+   </children>
+</AnchorPane>
